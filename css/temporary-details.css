@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  position: relative;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif, Helvetica-Bold;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+i,
+em {
+  font-style: normal;
+}
+/*左右浮动*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix::after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+  visibility: hidden;
+}
+.hla-header {
+  position: relative;
+  height: 193px;
+  padding: 46px 0 36px;
+  background-color: #000000;
+}
+.header-content {
+  margin: 0 auto;
+  width: 1308px;
+  text-align: center;
+}
+.header-content .header-tab {
+  margin-top: 45px;
+}
+.header-content .header-tab li {
+  float: left;
+  margin: 0 40px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-content .header-tab li > span {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*# sourceMappingURL=temporary-details.css.map */

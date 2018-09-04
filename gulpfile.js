@@ -9,13 +9,16 @@ var gulp = require('gulp'),
     // rev = require('gulp-rev'),
     // revReplace = require('gulp-rev-replace'),
     // useref = require('gulp-useref'),
-    plumber = require('gulp-plumber');~
+    cache = require('gulp-cache'),
+    plumber = require('gulp-plumber');
+~
+
 // 样式
-gulp.task('styles-dev', function() {
+gulp.task('styles-dev', function () {
     return gulp.src(['css/less/*.less'])
         .pipe(sourcemaps.init())
         .pipe(plumber({
-            errorHandler: function(err) {
+            errorHandler: function (err) {
                 console.log(err);
                 this.emit('end');
             }
@@ -39,9 +42,18 @@ gulp.task('styles-dev', function() {
 });
 
 //图片压缩
-gulp.src('./image/*.{jpg,png,gif,ico}')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./img/'))
+gulp.task('images-dev', function () {
+    return gulp.src('./image/*')
+        .pipe(cache(imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            interlaced: true
+        })))
+        .pipe(gulp.dest('./img'))
+        .pipe(notify({
+            message: 'Images task complete'
+        }));
+})
 
 
 
@@ -50,12 +62,13 @@ gulp.src('./image/*.{jpg,png,gif,ico}')
 //     .pipe(rev())                            // 给css,js,html加上hash版本号
 //     .pipe(revReplace())                     // 把引用的css和js替换成有版本号的名字
 //     .pipe(gulp.dest('./dist/'))
-    
-    
+
+
 // 预设任务
-gulp.task('default', function() {
+gulp.task('default', function () {
     // watch所有.less档，一有变动自动编译为css文件
     gulp.watch('css/less/*.less', ['styles-dev']);
+    gulp.watch('image/*.*', ['images-dev']);
     browserSync({
         server: {
             baseDir: './',
