@@ -1,7 +1,11 @@
 require.config({
 	paths:{
+<<<<<<< HEAD
 		jquery:"../lib/jquery.min",
 		layui:"../../layui/layui"
+=======
+		jquery:   "../lib/jquery.min"
+>>>>>>> 2ba32655a5b1eca10b0d97759eb203532931ae04
 	},
 	shim:{
 		
