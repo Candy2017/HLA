@@ -1,57 +1,73 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>海澜之家</title>
-		<meta name="renderer" content="webkit">
-	    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核 -->
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	    <!-- Favicons -->
-	    <link rel="icon" href="favicon.ico" type="image/x-icon">
-	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<head>
+	<meta charset="utf-8">
+	<title>海澜之家</title>
+	<meta name="renderer" content="webkit">
+	<!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	    <!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
-	    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	    <meta http-equiv="Pragma" content="no-cache">
-	    <meta http-equiv="Expires" content="0">
+	<!-- Favicons -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-	    <!-- 禁止百度转码 -->
-	    <meta http-equiv="Cache-Control" content="no-siteapp">
-	    <!-- windows phone 点击无高光 -->
-	    <meta name="msapplication-tap-highlight" content="no">
-	    <!-- CSS -->
-	    <link href="css/news-details.css" rel="stylesheet" type="text/css">
-		
-	</head>
+	<!--调试阶段禁止缓存,例如微信，QQ浏览器缓存-->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
 
-	<body>
-		<!-- 头部 -->
-		<div class="hla-header">
-			<div class="header-content">
-				<img class="header-title" src="img/title.png"></img>
-				<ul class="header-tab clearfix">
-					<li>本季新品 <span> | </span>NEW IN</li>
-					<li>公司产业 | INDUSTRY</li>
-					<li>新闻动态 | NEWS</li>
-					<li>投资者关系 | INVESTOR</li>
-					<li>关于我们 | ABOUT US</li>
-				</ul>
+	<!-- 禁止百度转码 -->
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- CSS -->
+	<link href="css/news-details.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- 头部 -->
+	<div class="hla-header">
+		<div class="header-content">
+			<img class="header-title" src="img/title.png"></img>
+			<ul class="header-tab clearfix">
+				<li>本季新品 <span> | </span>NEW IN</li>
+				<li>公司产业 | INDUSTRY</li>
+				<li>新闻动态 | NEWS</li>
+				<li>投资者关系 | INVESTOR</li>
+				<li>关于我们 | ABOUT US</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 内容 -->
+	<div class="content">
+		<div class="banner">
+			<div class="banner-tit1">
+				Company News
+			</div>
+			<div class="banner-tit2">
+				新闻动态
 			</div>
 		</div>
-		
-		<!-- 内容 -->
-        <div class="content">
-			<div class="banner">
-
+		<div class="content-con">
+			<div class="news">
+				<span class="layui-breadcrumb bread-cb" lay-separator="-">
+					<a href="">首页</a>
+					<a href="">国际新闻</a>
+					<a href="">亚太地区</a>
+					<a><cite>正文</cite></a>
+				</span>
 			</div>
-			
-        </div>
-		<!-- 头部end -->
-		
-	
-		<script src="js/lib/require.js" data-main="js/app/main" id="current-page" current-page ="tnews-details" target-module="news-details" defer async="true" ></script>
-	</body>
-	
+		</div>
+
+	</div>
+	<!-- 头部end -->
+
+
+	<script src="js/lib/require.js" data-main="js/app/main" id="current-page" current-page="tnews-details" target-module="news-details"
+	    defer async="true"></script>
+</body>
+
 
 </html>

@@ -1,6 +1,32 @@
 @import "common.less";
 
 .content{
-    background: url('../../img/con-bg.png');
-    // clear: both;
+    .banner{
+        width:100%;
+        height:550px;
+        background: url('../../img/news-banner.png') center center no-repeat;
+        color:#FFFFFF;
+        .banner-tit1{
+            font-size: 40px;
+            padding: 300px 0 0 250px;
+            font-family: -webkit-pictograph;
+        }
+        .banner-tit2{
+            font-size: 45px;
+            padding: 10px 0 0 250px;
+        }
+    }
+    .content-con{
+        width:100%;
+        height:550px;
+        background: url('../../img/con-bg.png') center center no-repeat;
+        color:gray;
+        .news{
+            width:1200px;
+            margin:0 auto;
+            .bread-cb{
+                visibility: visible;
+            }
+        }
+    }
 }

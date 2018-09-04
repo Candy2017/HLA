@@ -1,3 +1,4 @@
+@import "../layui/css/layui.css";
 * {
   margin: 0px;
   padding: 0px;
@@ -48,6 +49,70 @@ em {
   top: 46px;
   left: 70px;
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.hla-header .language > span {
+  display: inline-block;
+  margin-left: 4px;
+}
+.hla-header .language .select-lan {
+  display: none;
+  font-size: 13px;
+  width: 60px;
+  text-align: center;
+  margin: 4px 0 0 7px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.hla-header .language .select-lan a {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+}
+.hla-header .header-right {
+  position: absolute;
+  top: 46px;
+  right: 70px;
+}
+.hla-header .header-right .online-shop {
+  float: right;
+  padding: 0;
+  background-color: transparent;
+}
+.hla-header .header-right .online-shop .cart {
+  display: inline-block;
+  margin-right: 6px;
+  width: 17px;
+}
+.hla-header .header-right .online-shop .layui-nav-item {
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.7);
+}
+.hla-header .header-right .online-shop .layui-nav-child {
+  top: 20px;
+  line-height: 22px;
+  padding: 5px 0;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+.hla-header .header-right .online-shop .layui-nav-child a {
+  font-size: 12px;
+  padding: 0 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.hla-header .header-right .online-shop .layui-nav-child a:hover {
+  background-color: transparent;
+  color: inherit;
+}
+.hla-header .header-right .follow {
+  float: right;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 12px;
+  margin-left: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 .header-content {
   margin: 0 auto;
@@ -62,10 +127,37 @@ em {
   float: left;
   margin: 0 40px;
   font-size: 16px;
+  line-height: 1!important;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-content .header-tab li > a {
   color: rgba(255, 255, 255, 0.6);
 }
 .header-content .header-tab li > span {
+  margin: 0 3px;
+  vertical-align: top;
   color: rgba(255, 255, 255, 0.4);
+}
+.header-content .header-tab li > em {
+  font-size: 13px;
+}
+.header-content .header-tab li .layui-nav-child {
+  top: 40px;
+  line-height: 32px;
+  padding: 5px 0;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+.header-content .header-tab.layui-nav {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+}
+.layui-nav .layui-this:after,
+.layui-nav-bar,
+.layui-nav-tree .layui-nav-itemed:after {
+  display: none;
 }
 
 /*# sourceMappingURL=common.css.map */
