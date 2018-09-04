@@ -144,12 +144,9 @@ em {
 .header-content .header-tab li > em {
   font-size: 13px;
 }
-<<<<<<< HEAD
-=======
 .header-content .header-tab li .layui-nav-more {
   display: none;
 }
->>>>>>> a4e1145944b53c130711332724555b134403b6c5
 .header-content .header-tab li .layui-nav-child {
   top: 40px;
   line-height: 32px;
@@ -168,8 +165,6 @@ em {
 .layui-nav-tree .layui-nav-itemed:after {
   display: none;
 }
-<<<<<<< HEAD
-=======
 .footer-i {
   height: 43px;
   text-align: center;
@@ -230,6 +225,5 @@ em {
   margin-top: 28px;
   color: rgba(255, 255, 255, 0.7);
 }
->>>>>>> a4e1145944b53c130711332724555b134403b6c5
 
 /*# sourceMappingURL=index.css.map */

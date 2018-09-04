@@ -128,12 +128,6 @@ em {
   margin: 0 40px;
   font-size: 16px;
   line-height: 1!important;
-<<<<<<< HEAD
-  color: rgba(255, 255, 255, 0.6);
-}
-.header-content .header-tab li > a {
-=======
->>>>>>> a4e1145944b53c130711332724555b134403b6c5
   color: rgba(255, 255, 255, 0.6);
 }
 .header-content .header-tab li > a {
@@ -150,12 +144,9 @@ em {
 .header-content .header-tab li > em {
   font-size: 13px;
 }
-<<<<<<< HEAD
-=======
 .header-content .header-tab li .layui-nav-more {
   display: none;
 }
->>>>>>> a4e1145944b53c130711332724555b134403b6c5
 .header-content .header-tab li .layui-nav-child {
   top: 40px;
   line-height: 32px;
@@ -174,35 +165,6 @@ em {
 .layui-nav-tree .layui-nav-itemed:after {
   display: none;
 }
-<<<<<<< HEAD
-.content .banner {
-  width: 100%;
-  height: 550px;
-  background: url('../../img/news-banner.png') center center no-repeat;
-  color: #FFFFFF;
-}
-.content .banner .banner-tit1 {
-  font-size: 40px;
-  padding: 300px 0 0 250px;
-  font-family: -webkit-pictograph;
-}
-.content .banner .banner-tit2 {
-  font-size: 45px;
-  padding: 10px 0 0 250px;
-}
-.content .content-con {
-  width: 100%;
-  height: 550px;
-  background: url('../../img/con-bg.png') center center no-repeat;
-  color: gray;
-}
-.content .content-con .news {
-  width: 1200px;
-  margin: 0 auto;
-}
-.content .content-con .news .bread-cb {
-  visibility: visible;
-=======
 .footer-i {
   height: 43px;
   text-align: center;
@@ -263,9 +225,33 @@ em {
   margin-top: 28px;
   color: rgba(255, 255, 255, 0.7);
 }
-.content {
-  background: url('../../img/con-bg.png');
->>>>>>> a4e1145944b53c130711332724555b134403b6c5
+.content .banner {
+  width: 100%;
+  height: 550px;
+  background: url('../../img/news-banner.png') center center no-repeat;
+  color: #FFFFFF;
+}
+.content .banner .banner-tit1 {
+  font-size: 40px;
+  padding: 300px 0 0 250px;
+  font-family: -webkit-pictograph;
+}
+.content .banner .banner-tit2 {
+  font-size: 45px;
+  padding: 10px 0 0 250px;
+}
+.content .content-con {
+  width: 100%;
+  height: 550px;
+  background: url('../../img/con-bg.png') center center no-repeat;
+  color: gray;
+}
+.content .content-con .news {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .content-con .news .bread-cb {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=news-details.css.map */
